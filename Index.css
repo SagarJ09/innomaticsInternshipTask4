@@ -1,0 +1,242 @@
+h1{
+    color: black;
+    font-size: 24px;
+    align-items: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.interactive-box {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .interactive-box:hover {
+    background-color: #e2e6ea;
+    transform: scale(1.05);
+  }
+  
+  .interactive-box h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .interactive-box ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .interactive-box ul li {
+    margin: 5px 0;
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #ff6700;
+}
+
+
+.hero {
+    background-image: url('Images/NAS.jpeg');
+    background-size: 100px;
+    background-size: cover;
+    background-position: center;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 300px;
+}
+
+.cta-btn {
+    padding: 10px 30px;
+    background-color: #ff6700;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cta-btn:hover {
+    background-color: #000000;
+    color: #ff0000;
+    transition: 0.3s;
+}
+
+.services {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.services h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.service-item {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
+
+ .home, .about, .services, .contact {
+    width: 100%;
+  }
+  
+  /* Tablet View: 2 columns */
+  @media (min-width: 768px) {
+    .content {
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    
+    .home, .about, .services, .contact  {
+      padding: 100px;
+    }
+  }
+  
+  /* Desktop View: 4 columns */
+  @media (min-width: 1024px) {
+    .content {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+        " .home, .about, .services, .contact ";
+    }
+  }
+  * Main Section */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 10000px;
+    width: 100%;
+}
+
+/* Box Styles */
+.box {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+/* Hover Effects */
+.box:hover {
+    transform: translateY(-5px); /* Moves the box up slightly */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+}
